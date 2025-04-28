@@ -1,0 +1,5 @@
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% if self.image %}
+    {% picture self.image original format-{avif,webp,jpeg} %}
+{% endif %}

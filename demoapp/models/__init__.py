@@ -1,0 +1,1 @@
+from demoapp.models.pages.demopage import DemoPage  # noqa: F401
