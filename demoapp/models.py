@@ -1,5 +1,5 @@
 from wagtail.models import Page
-from wagtail.api import APIField
+from wagtail.api import APIField  # apiを有効にするためのインポート
 from wagtail.admin.panels import FieldPanel
 from django.db import models
 
@@ -13,6 +13,8 @@ class DemoPage(Page):
 
     content = models.CharField()
     
+    # apiを有効にするフィールドを指定
+    # これにより、APIからこのフィールドにアクセスできるようになります
     api_fields = [
         APIField("content"),
     ]
